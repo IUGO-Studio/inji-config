@@ -35,5 +35,5 @@ jobs:
 
       - name: Restart Kubernetes deployment
         run: |
-          kubectl rollout restart deployment/${{ steps.env.outputs.deployment_name }} -n ${{ steps.env.outputs.deployment_namespace }}
-          kubectl rollout status deployment/${{ steps.env.outputs.deployment_name }} -n ${{ steps.env.outputs.deployment_namespace }} --timeout=5m
+          kubectl rollout restart deployment/config-server -n config-server
+          kubectl rollout status deployment/config-server -n config-server --timeout=5m
