@@ -8,8 +8,6 @@ on:
       - develop
       - test
       - main
-    paths:
-      - 'certify-service/**'
 
 jobs:
   deploy:
