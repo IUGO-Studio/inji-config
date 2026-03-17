@@ -28,7 +28,7 @@ jobs:
           credentials_json: ${{ secrets.GCP_SA_KEY }}
 
       - name: 'Set up GKE credentials'
-        uses: 'google-github-actions/get-gke-credentials@v2'
+        uses: 'google-github-actions/get-gke-credentials@v3'
         with:
           cluster_name: 'k8s-inji-dev'
           location: 'us-central1-a'
