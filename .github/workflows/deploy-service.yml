@@ -1,4 +1,4 @@
-name: Deploy Certify Service
+name: Deploy Inji Config Service
 
 on:
   # pull_request:
@@ -26,6 +26,13 @@ jobs:
         with:
           token_format: 'access_token'
           credentials_json: ${{ secrets.GCP_SA_KEY }}
+
+      - name: Setup gcloud
+        uses: google-github-actions/setup-gcloud@v2
+
+      - name: Upload file to GCS
+        run: |
+          gsutil cp ./mimoto-issuers-config.json gs://${{ vars.BUCKET }}/mimoto-issuers-config.json
 
       - name: 'Set up GKE credentials'
         uses: 'google-github-actions/get-gke-credentials@v3'
