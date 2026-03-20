@@ -139,6 +139,34 @@
       "enabled": "true",
       "wellknown_endpoint": "https://inji-dev.iugolabs.com/.well-known/openid-credential-issuer",
       "credential_issuer_host": "https://inji-dev.iugolabs.com/v1/certify/issuance"
+    },
+    {
+      "issuer_id": "INTRANT_K8",
+      "protocol": "OpenId4VCI",
+      "display": [
+        {
+          "name": "INTRANT K8",
+          "logo": {
+            "url": "https://yt3.googleusercontent.com/D77-FpYNthYQkj1ppBgjZF49GrR3GoLqJAox_9ADgDETBc6EYUVgqYsGtT-BKRJb14TygOvuEA=s900-c-k-c0x00ffffff-no-rj",
+            "alt_text": "intrant-logo"
+          },
+          "title": "INTRANT K8",
+          "description": "Descargar Licencia de Conducir K8",
+          "language": "en"
+        }
+      ],
+      "client_id": "cd47d9f6-abe9-4f30-af62-01c50464ce41",
+      "wellknown_endpoint": "http://certify.inji-rd.franciscomercedes.com/.well-known/openid-credential-issuer",
+      "redirect_uri": "io.mosip.residentapp.inji://oauthredirect",
+      "authorization_audience": "https://cuenta.digital.gob.do/oauth2/token",
+      "token_endpoint": "http://localhost:8099/v1/mimoto/get-token/INTRANT_K8",
+      "proxy_token_endpoint": "https://cuenta.digital.gob.do/oauth2/token",
+      "client_alias": "wallet-demo-client",
+      "client_secret": "1MZcEPR-pIBg9U.S.UlLZoXA7M",
+      "qr_code_type": "EmbeddedVC",
+      "enabled": "true",
+      "credential_issuer": "INTRANT_K8",
+      "credential_issuer_host": "http://web.inji-rd.franciscomercedes.com/v1/certify/issuance"
     }
   ]
 }
