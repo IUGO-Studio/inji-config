@@ -166,7 +166,7 @@
       "qr_code_type": "EmbeddedVC",
       "enabled": "true",
       "credential_issuer": "INTRANT_K8",
-      "credential_issuer_host": "http://web.inji-rd.franciscomercedes.com/v1/certify/issuance"
+      "credential_issuer_host": "http://certify.inji-rd.franciscomercedes.com/v1/certify/issuance"
     }
   ]
 }
